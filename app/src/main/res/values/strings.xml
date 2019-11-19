@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">SoftwaricaApp</string>
+    <string name="Nav_Home">Nav_Home</string>
+    <string name="Nav_AddStudent">Nav_AddStudent</string>
+    <string name="nav_about">Nav_AboutUs</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

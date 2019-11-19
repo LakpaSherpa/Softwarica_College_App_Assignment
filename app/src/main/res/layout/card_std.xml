@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewStudent"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/IV_Image"
+                android:layout_width="130dp"
+                android:layout_height="170dp"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/pls"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/TV_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="15dp"
+                android:inputType="text"
+                android:text="Pasanglakpa Sherpa"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/IV_Image"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/TV_Gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="220dp"
+                android:layout_marginTop="80dp"
+                android:inputType="text"
+                android:text="Male"
+                app:layout_constraintStart_toEndOf="@+id/IV_Image"
+                app:layout_constraintTop_toBottomOf="@+id/TV_Name" />
+
+            <TextView
+                android:id="@+id/TV_Age"
+                android:layout_width="22dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="12dp"
+                android:inputType="date"
+                android:text="22"
+                app:layout_constraintStart_toEndOf="@+id/IV_Image"
+                app:layout_constraintTop_toBottomOf="@+id/TV_Name" />
+
+            <TextView
+                android:id="@+id/TV_Address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:inputType="text"
+                android:text="Baneshwor"
+                app:layout_constraintStart_toStartOf="@+id/TV_Age"
+                app:layout_constraintTop_toBottomOf="@+id/TV_Age" />
+
+            <ImageView
+                android:id="@+id/Btn_Delete"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="220dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_delete_black_24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
