@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/TV_TitleTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="70dp"
+        android:text="Softwarica"
+        android:textStyle="bold"
+        android:textColor="@color/BlueDark"
+        android:textSize="56dp" />
+
+
+    <EditText
+        android:id="@+id/ET_UserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="22dp"
+        android:hint="Username"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/ET_Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="22dp"
+        android:hint="Password"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/btn_Login"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="20dp"
+        android:textStyle="italic"
+        android:background="@color/Blue"
+        android:textColor="@color/White"
+        android:text="Login" />
+
+</LinearLayout>

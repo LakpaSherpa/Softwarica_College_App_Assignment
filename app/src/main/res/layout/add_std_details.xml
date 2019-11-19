@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/TV_stdName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Student Details"
+        android:textSize="32sp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/ET_FullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="22dp"
+        android:hint="Full Name"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/ET_Age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="22dp"
+        android:hint="Age"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/TV_Gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="22dp"
+        android:text="Select Gender"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/ET_Address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="22dp"
+        android:hint="Address"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/Btn_Save"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/Blue"
+        android:text="Save"
+        android:textColor="@color/White"
+        android:textStyle="bold" />
+
+</LinearLayout>
