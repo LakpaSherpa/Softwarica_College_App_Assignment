@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.softwaricaapp.FragmentStd.HomeFragment;
 
@@ -41,6 +42,7 @@ public class LoginActivity extends AppCompatActivity {
             return;
         }
         if (name.equals("softwarica") && password.equals("coventry")){
+            Toast.makeText(getApplicationContext(),"Login successfully",Toast.LENGTH_LONG).show();
             Intent intent = new Intent(LoginActivity.this, MainActivity.class);
             startActivity(intent);
         } else {

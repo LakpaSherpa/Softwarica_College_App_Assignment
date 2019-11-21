@@ -30,9 +30,9 @@ public class MainActivity extends AppCompatActivity {
 
         bottomNavigation = findViewById(R.id.bottom_navigation);
         main_layout = findViewById(R.id.main_layout);
-        students.add(new Student("Pasanglakpa", 22, "male", "kathmandu", R.drawable.ic_person_black_24dp));
-        students.add(new Student("milan", 22, "Male", "baktapur", R.drawable.ic_person_black_24dp));
-        students.add(new Student("priya", 22, "Female", "banglor", R.drawable.ic_person_black_24dp));
+        students.add(new Student("Pasanglakpa", 22, "male", "kathmandu", R.drawable.heros));
+        students.add(new Student("milan", 22, "Male", "baktapur", R.drawable.malephoto));
+        students.add(new Student("priya", 22, "Female", "banglor", R.drawable.femalephotos));
 
         bottomNavigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
