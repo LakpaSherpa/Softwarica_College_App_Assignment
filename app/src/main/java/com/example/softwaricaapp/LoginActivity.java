@@ -36,6 +36,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
     }
+    //validation loginform
     public  void  validate(String name, String password){
         if ((name.equals("") || password.equals(""))) {
 
