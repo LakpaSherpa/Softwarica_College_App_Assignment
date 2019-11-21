@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.FrameLayout;
 
-import com.example.softwaricaapp.FragmentStd.AboutFragment;
+import com.example.softwaricaapp.FragmentStd.AboutUsFragment;
 import com.example.softwaricaapp.FragmentStd.AddStdFragment;
 import com.example.softwaricaapp.FragmentStd.HomeFragment;
 import com.example.softwaricaapp.Model.Student;
@@ -30,11 +30,9 @@ public class MainActivity extends AppCompatActivity {
 
         bottomNavigation = findViewById(R.id.bottom_navigation);
         main_layout = findViewById(R.id.main_layout);
-        students.add(new Student("pasang", 22, "male", "kathmandu", 1));
-        students.add(new Student("milan", 22, "male", "baktapur", 1));
-        students.add(new Student("uttam", 22, "male", "ktm", 2));
-        students.add(new Student("sarita", 22, "female", "koteshwor", 2));
-        students.add(new Student("lakpa", 22, "male", "balkot", 4));
+        students.add(new Student("Pasanglakpa", 22, "male", "kathmandu", R.drawable.ic_person_black_24dp));
+        students.add(new Student("milan", 22, "Male", "baktapur", R.drawable.ic_person_black_24dp));
+        students.add(new Student("priya", 22, "Female", "banglor", R.drawable.ic_person_black_24dp));
 
         bottomNavigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -45,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
                         fragment = new HomeFragment();
                         break;
                     case R.id.Nav_AboutUs:
-                        fragment = new AboutFragment();
+                        fragment = new AboutUsFragment();
                         break;
                     case R.id.Nav_AddStudent:
                         fragment = new AddStdFragment();

@@ -28,7 +28,7 @@ public class HomeFragment extends Fragment {
         View view =inflater.inflate(R.layout.frag_home_std,container, false);
         recyclerView = view.findViewById(R.id.recyclerview_id);
 
-        StudentAdapter studentAdapter = new StudentAdapter(getActivity(), MainActivity.students);
+        StudentAdapter studentAdapter = new StudentAdapter(getContext(), MainActivity.students);
         recyclerView.setAdapter(studentAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         return view;

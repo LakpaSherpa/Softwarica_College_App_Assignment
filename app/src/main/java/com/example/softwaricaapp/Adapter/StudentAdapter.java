@@ -32,7 +32,7 @@ public class StudentAdapter extends RecyclerView.Adapter<StudentAdapter.StudentV
     public StudentViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_std, parent, false);
 
-        return new StudentViewHolder(view, context, studentList);
+        return new StudentViewHolder(view,context, studentList);
     }
 
     @Override
@@ -40,7 +40,7 @@ public class StudentAdapter extends RecyclerView.Adapter<StudentAdapter.StudentV
         Student student = studentList.get(position);
         holder.name.setText(student.getName());
         holder.address.setText(student.getAddress());
-        holder.age.setText(student.getAge());
+        holder.age.setText(student.getAge()+"");
         holder.gender.setText(student.getGender());
         holder.image.setImageResource(student.getImage());
 

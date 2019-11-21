@@ -40,7 +40,7 @@ public class LoginActivity extends AppCompatActivity {
 
             return;
         }
-        if (name.equals("pasang") && password.equals("pasang")){
+        if (name.equals("softwarica") && password.equals("coventry")){
             Intent intent = new Intent(LoginActivity.this, MainActivity.class);
             startActivity(intent);
         } else {
