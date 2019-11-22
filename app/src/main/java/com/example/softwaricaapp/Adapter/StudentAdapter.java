@@ -37,13 +37,20 @@ public class StudentAdapter extends RecyclerView.Adapter<StudentAdapter.StudentV
 
     @Override
     public void onBindViewHolder(@NonNull StudentViewHolder holder, int position) {
-        Student student = studentList.get(position);
+        final Student student = studentList.get(position);
         holder.name.setText(student.getName());
         holder.address.setText(student.getAddress());
         holder.age.setText(student.getAge() + "");
         holder.gender.setText(student.getGender());
         holder.image.setImageResource(student.getImage());
 
+
+        holder.image.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(context.getApplicationContext(),"Hello this is : " + ' '+student.getName(),Toast.LENGTH_LONG).show();
+            }
+        });
 
     }
 
@@ -86,7 +93,6 @@ public class StudentAdapter extends RecyclerView.Adapter<StudentAdapter.StudentV
                     notifyItemRemoved(getAdapterPosition());
                 }
             });
-
 
         }
 
